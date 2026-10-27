@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded corpora and the pooled table, all regenerable with src/data_prep.py
+data/raw/
+data/processed/
+
+# Model weights. MuRIL alone is 950 MB.
+models/
+!models/.gitkeep
+
+# Training logs, kept results JSON is small enough to track
+results/*.log
+
+.DS_Store

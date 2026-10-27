@@ -1,0 +1,38 @@
+[
+  {
+    "language": "English",
+    "n": 9617,
+    "observed_delta": 0.023150895469001398,
+    "ci_low": 0.0165715185851843,
+    "ci_high": 0.03004077405531137,
+    "p_muril_better": 1.0,
+    "significant": true
+  },
+  {
+    "language": "Hindi",
+    "n": 735,
+    "observed_delta": -0.029039144054239352,
+    "ci_low": -0.06335206005455885,
+    "ci_high": 0.006648104686071625,
+    "p_muril_better": 0.0565,
+    "significant": false
+  },
+  {
+    "language": "Bengali",
+    "n": 4457,
+    "observed_delta": 0.015673712617787272,
+    "ci_low": 0.006475980244689908,
+    "ci_high": 0.02488418811300544,
+    "p_muril_better": 0.9995,
+    "significant": true
+  },
+  {
+    "language": "Tamil",
+    "n": 1089,
+    "observed_delta": 0.018031032055555007,
+    "ci_low": -0.01242947106833563,
+    "ci_high": 0.04700608680616248,
+    "p_muril_better": 0.878,
+    "significant": false
+  }
+]
