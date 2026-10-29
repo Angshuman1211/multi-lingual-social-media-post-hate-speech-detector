@@ -7,8 +7,6 @@ results rather than one pooled number.
 
 NLP course project, Semester 7.
 
----
-
 ## Data
 
 | Language | Corpus | Platform | Rows (clean) | Toxic share |
