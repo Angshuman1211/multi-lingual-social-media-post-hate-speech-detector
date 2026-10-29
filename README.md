@@ -9,36 +9,6 @@ NLP course project, Semester 7.
 
 ---
 
-## Two problems I ran into, and what they changed
-
-**English was a slur detector, not a hate detector.** Davidson on its own scored "you
-people are disgusting trash and should be wiped out" at 0.07 toxic, and leave-one-out
-attribution showed that *removing* the word "trash" made the text look more toxic.
-Adding the Berkeley corpus, which carries plenty of hate containing no slur, fixed that
-example to 0.93 and dropped English macro F1 from 0.92 to 0.83. The lower number is the
-honest one, because the first task was easier than the real one.
-
-**The original Telugu corpus was not social media, and its labels were wrong.** I built
-the first version on the IIIT-H Telugu set, then audited it: the rows are scraped news
-prose, not posts, it is only 1.1% positive, and sampling the hate-labelled rows turns up
-text that is plainly not hate speech, including a sentence about India's S-400 missile
-procurement deal. Its apparent AUC of 0.927 was therefore at risk of measuring news
-topic rather than hate. I replaced it with **Tamil**, which is YouTube comments from the
-DravidianCodeMix shared task:
-
-| | old Telugu | new Tamil |
-|---|---:|---:|
-| source | scraped news prose | YouTube comments |
-| usable rows | 34,999 | 7,266 |
-| toxic share | 1.1% | **19.7%** |
-| positives | ~380 | **1,432** |
-| positives in test | 55 | **214** |
-
-Smaller, but 3.8× more positives at 18× better balance, from actual social media, with
-labels that survive inspection. Marathi would have been the more obvious Indian language
-to pick, but it shares Devanagari with Hindi and script-based routing cannot separate
-the two.
-
 ## Data
 
 | Language | Corpus | Platform | Rows (clean) | Toxic share |
